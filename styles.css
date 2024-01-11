@@ -5,6 +5,7 @@
 
 body{
     background-color: rgb(152, 149, 149);
+    box-sizing: border-box;
 }
 
 /* Top navbar */
@@ -112,12 +113,18 @@ body{
 
 @media screen and (max-width: 768px){
 
-  
+  body{
+    box-sizing: border-box;
+  }
 
     #hidden-menubar{
         font-size: 2rem;
         color: #fff;
-        display:none;
+        display:block;
+        line-height: 1px;
+        position: absolute;
+        top: 35px;
+        left: 90%;
     }
    
 
@@ -125,11 +132,14 @@ body{
 
 
 .nav{
-    height: 100vh;
+    height: fit-content;
     width: 100%;
+    
     display: block;
-    justify-content: center;
     text-align: center;
+    
+    
+   
     
     background-color: rgb(2, 2, 68);
 
@@ -144,10 +154,14 @@ body{
     background-clip: text;
     color: transparent;
     
+    
+    
 }
 .nav h1 {
     font-size: 2.8rem;
     line-height:14px;
+    padding-top: 35px;
+    
     
 
 }
@@ -155,21 +169,86 @@ body{
 .nav h1 span{
     font-size: 0.8rem;
 
-    margin-left: 31%;
+    margin-left: 8%;
 }
 
 /* Menubar-section */
 
 .nav .nav-menubar ul{
+    display: none;
+
+}
+
+
+.nav .submenu{
+    display: none;
+}
+
+/* button-section */
+ .nav-button{
+    
+    display: none;
+}
+
+}
+
+
+
+
+
+.navx .nav{
+    height: fit-content;
+    width: 100%;
+    
+    display: block;
+    text-align: center;
+    
+    
+   
+    
+    background-color: rgb(2, 2, 68);
+
+}
+
+/* Company Titel */
+
+.navx .nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+    
+    
+}
+.navx h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    padding-top: 35px;
+    
+    
+
+}
+
+.nav h1 span{
+    font-size: 0.8rem;
+
+    margin-left: 8%;
+}
+
+/* Menubar-section */
+
+.navx .nav-menubar ul{
     display: block;
     
 }
-.nav .nav-menubar ul li{
+.navx .nav-menubar ul li{
     list-style: none;
     padding: 10px 20px;
 }
 
-.nav .nav-menubar ul li a{
+.navx .nav-menubar ul li a{
     text-decoration: none;
     font-size: 1.3rem;
     color: #fff;
@@ -182,10 +261,11 @@ body{
 }
 
 /* button-section */
-.nav .nav-button{
+.navx .nav-button{
     width: 100%;
+    display: block;
 }
-.nav .nav-button button{
+.navx .nav-button button{
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 20px;
@@ -195,12 +275,12 @@ body{
     
 }
 
-.nav .signin-button{
+.navx .signin-button{
     margin-left: 1%;
     padding: 8px 15px;
 }
 
-.nav .login-button{
+.navx .login-button{
     padding: 8px 20px;
 
 }
@@ -211,9 +291,8 @@ body{
     color: darkorange;
 }
 
-.nav .nav-login button:hover{
+.navx .nav-login button:hover{
     font-size: 1.25rem;
     background-color:rgb(101, 23, 4) ;
     color: #fff;
-}
 }
