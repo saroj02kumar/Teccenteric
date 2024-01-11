@@ -11,12 +11,19 @@ body{
 /* Top navbar */
 .nav{
     height: 15vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(2, 2, 68);
+    background-image: linear-gradient(to left,rgb(2, 2, 68), rgb(18, 18, 30), rgb(32, 32, 41),rgb(32, 32, 41), rgb(12, 11, 11), rgb(6, 6, 6) ) ;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 
+}
+
+@keyframes nav-color-change {
+    
+    
 }
 
 /* Company Titel */
@@ -33,13 +40,18 @@ body{
     font-size: 2.8rem;
     line-height:14px;
     
+    
 
+}
+.nav-logo{
+    width: fit-content;
+    
 }
 
 .nav h1 span{
     font-size: 0.8rem;
-
-    margin-left: 31%;
+    padding-left: 60px;
+    
 }
 
 /* Menubar-section */
@@ -66,13 +78,13 @@ body{
 }
 
 /* button-section */
-.nav-button{
+/* .nav-button{
     width: 15%;
-}
+} */
 .nav-button button{
     font-size: 1.2rem;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     color: rgb(2, 2, 69);
     
@@ -90,13 +102,17 @@ body{
 }
 
 .nav-menubar ul li a:hover{
-    background-color: rgb(7, 77, 77);
-    padding: 6vh 10px ;
-    color: darkorange;
+    background-color: rgb(130, 202, 202);
+    padding: 5.6vh 10px  5.9vh 10px;
+    color: rgb(54, 31, 3);
+    border-top: 3px solid orangered ;
+    text-underline-offset: 5px;
+    text-decoration: underline orangered;
+    transition: all ease 1s linear;
 }
 
-.nav-login button:hover{
-    font-size: 1.25rem;
+.nav-button button:hover{
+    /* font-size: 1.25rem; */
     background-color:rgb(101, 23, 4) ;
     color: #fff;
 }
@@ -190,11 +206,6 @@ body{
     display: none;
 }
 
-}
-
-
-
-
 
 .navx .nav{
     height: fit-content;
@@ -206,7 +217,8 @@ body{
     
    
     
-    background-color: rgb(2, 2, 68);
+    background-image: linear-gradient(to left,rgb(2, 2, 68), rgb(18, 18, 30), rgb(32, 32, 41),rgb(32, 32, 41), rgb(12, 11, 11), rgb(6, 6, 6) ) ;
+    
 
 }
 
@@ -286,11 +298,19 @@ body{
 
 }
 
-.navx .nav-menubar ul li a:hover{
-    background-color: rgb(7, 77, 77);
+.navx .nav-menubar ul li:hover{
+    /* background-color: rgb(7, 77, 77);
     padding: 10px 10px ;
     color: darkorange;
-    border: 1px solid #fff;
+    border: 1px solid #fff; */
+
+    background-color: rgb(130, 202, 202);
+    padding: 3px;
+    color: rgb(54, 31, 3);
+    border: 3px solid orangered ;
+    text-underline-offset: 5px;
+    text-decoration: underline orangered;
+    transition: all ease 1s linear;
 }
 
 .navx .nav-button button:hover{
@@ -298,3 +318,12 @@ body{
     background-color:rgb(101, 23, 4) ;
     color: #fff;
 }
+
+
+
+
+}
+
+
+
+
