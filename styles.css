@@ -293,7 +293,7 @@ body{
     border: 1px solid #fff;
 }
 
-.navx .nav-login button:hover{
+.navx .nav-button button:hover{
     font-size: 1.25rem;
     background-color:rgb(101, 23, 4) ;
     color: #fff;
