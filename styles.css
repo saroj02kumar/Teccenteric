@@ -65,8 +65,8 @@ body{
 }
 
 /* button-section */
-.nav-login{
-    width: 27%;
+.nav-button{
+    width: 15%;
 }
 .nav-button button{
     font-size: 1.2rem;
@@ -79,7 +79,7 @@ body{
 }
 
 .signin-button{
-    margin-left: 5%;
+    margin-left: 2%;
     padding: 8px 15px;
 }
 
