@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(152, 149, 149);
+}
+
+/* Top navbar */
+.nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(2, 2, 68);
+
+}
+
+/* Company Titel */
+
+.nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+}
+.nav h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    
+
+}
+
+.nav h1 span{
+    font-size: 0.8rem;
+
+    margin-left: 31%;
+}
+
+/* Menubar-section */
+
+.nav-menubar ul{
+    display: flex;
+    
+}
+.nav-menubar ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-menubar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 6vh 10px;
+}
+
+.submenu{
+    display: none;
+}
+
+/* button-section */
+.nav-login{
+    width: 15%;
+}
+.nav-button button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    color: rgb(2, 2, 69);
+    
+    
+}
+
+.signin-button{
+    margin-left: 5%;
+    padding: 8px 15px;
+}
+
+.login-button{
+    padding: 8px 20px;
+
+}
+
+.nav-menubar ul li a:hover{
+    background-color: rgb(7, 77, 77);
+    padding: 6vh 10px ;
+    color: darkorange;
+}
+
+.nav-login button:hover{
+    font-size: 1.25rem;
+    background-color:rgb(101, 23, 4) ;
+    color: #fff;
+}
+
+/* hidden menu section */
+
+#hidden-menubar{
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+}
+
+/* Top-navbar-responsive section */
+
+@media screen and (max-width: 768px){
+
+  
+
+    #hidden-menubar{
+        font-size: 2rem;
+        color: #fff;
+        display:none;
+    }
+   
+
+
+
+
+.nav{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: rgb(2, 2, 68);
+
+}
+
+/* Company Titel */
+
+.nav-logo h1 a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow, rgb(255, 51, 0), rgb(255, 60, 0));
+    padding: 10px 0px 0px 0px;
+    background-clip: text;
+    color: transparent;
+    
+}
+.nav h1 {
+    font-size: 2.8rem;
+    line-height:14px;
+    
+
+}
+
+.nav h1 span{
+    font-size: 0.8rem;
+
+    margin-left: 31%;
+}
+
+/* Menubar-section */
+
+.nav .nav-menubar ul{
+    display: block;
+    
+}
+.nav .nav-menubar ul li{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav .nav-menubar ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 6vh 10px;
+}
+
+.nav .submenu{
+    display: none;
+}
+
+/* button-section */
+.nav .nav-login{
+    width: 15%;
+}
+.nav .nav-button button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    color: rgb(2, 2, 69);
+    
+    
+}
+
+.nav .signin-button{
+    margin-left: 1%;
+    padding: 8px 15px;
+}
+
+.nav .login-button{
+    padding: 8px 20px;
+
+}
+
+.navx .nav-menubar ul li a:hover{
+    background-color: rgb(7, 77, 77);
+    padding: 6vh 10px ;
+    color: darkorange;
+}
+
+.nav .nav-login button:hover{
+    font-size: 1.25rem;
+    background-color:rgb(101, 23, 4) ;
+    color: #fff;
+}
+}
