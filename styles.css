@@ -35,17 +35,19 @@ body{
     background-clip: text;
     color: transparent;
     
+    
 }
 .nav h1 {
     font-size: 2.8rem;
     line-height:14px;
-    z-index: 1;
+    
     
     
 
 }
 .nav-logo{
     width: fit-content;
+    
     
 }
 
@@ -329,6 +331,18 @@ body{
 
 
 
+}
+
+@media screen and (max-width: 1200px){
+    .nav-menubar ul li a:hover{
+        background-color: rgb(130, 202, 202);
+        padding: 10px;
+        color: rgb(54, 31, 3);
+        border-top: 3px solid orangered ;
+        text-underline-offset: 5px;
+        text-decoration: underline orangered;
+        transition: all ease 1s linear;
+    }
 }
 
 
