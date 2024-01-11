@@ -306,11 +306,15 @@ body{
 
     background-color: rgb(130, 202, 202);
     padding: 3px;
-    color: rgb(54, 31, 3);
+    
     border: 3px solid orangered ;
     text-underline-offset: 5px;
     text-decoration: underline orangered;
     transition: all ease 1s linear;
+}
+.navx .nav-menubar ul li a:hover{
+    color: rgb(54, 31, 3);
+    padding: 0px;
 }
 
 .navx .nav-button button:hover{
