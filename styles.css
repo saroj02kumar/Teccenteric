@@ -182,8 +182,8 @@ body{
 }
 
 /* button-section */
-.nav .nav-login{
-    width: 15%;
+.nav .nav-button{
+    width: 100%;
 }
 .nav .nav-button button{
     font-size: 1.2rem;
