@@ -169,7 +169,7 @@ body{
 .nav h1 span{
     font-size: 0.8rem;
 
-    margin-left: 8%;
+    margin-left: 4%;
 }
 
 /* Menubar-section */
@@ -234,7 +234,7 @@ body{
 .nav h1 span{
     font-size: 0.8rem;
 
-    margin-left: 8%;
+    margin-left: 4%;
 }
 
 /* Menubar-section */
@@ -288,8 +288,9 @@ body{
 
 .navx .nav-menubar ul li a:hover{
     background-color: rgb(7, 77, 77);
-    padding: 6vh 10px ;
+    padding: 10px 10px ;
     color: darkorange;
+    border: 1px solid #fff;
 }
 
 .navx .nav-login button:hover{
