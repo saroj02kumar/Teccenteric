@@ -14,7 +14,7 @@ body{
 /* Top navbar */
 .nav{
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
