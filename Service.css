@@ -9,7 +9,10 @@
     width: 100%;
     display: grid;
     place-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
+    
+   
+    
   }
 
   .section-heading{
@@ -76,8 +79,10 @@
     color: #f0f0f0;
   }
   @media screen and (min-width: 768px) {
-    section {
+    .section {
       padding: 0 2em;
+      overflow-y: scroll;
+      box-sizing: border-box;
     }
     .column {
       flex: 0 50%;
@@ -85,11 +90,21 @@
     }
   }
   @media screen and (min-width: 992px) {
-    section {
+    .section {
       padding: 1em 3em;
+      overflow-y: scroll;
+      box-sizing: border-box;
     }
     .column {
       flex: 0 0 33.33%;
       max-width: 33.33%;
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .section {
+      padding: 0 2em;
+      overflow-y: scroll;
+      box-sizing: border-box;
     }
   }
