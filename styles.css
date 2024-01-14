@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 body{
-    background-color: rgb(152, 149, 149);
+    background-color: #2c3e50;
     box-sizing: border-box;
 }
 
@@ -65,44 +68,50 @@ body{
 }
 .nav-menubar ul li{
     list-style: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .nav-menubar ul li a{
     text-decoration: none;
-    font-size: 1.3rem;
-    color: #fff;
-    font-weight: 500;
+    font-size: 1.2rem;
+    /* color: #fff; */
+    font-weight: 300;
     padding: 6vh 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #48dbfb;
 }
 
 .submenu{
     display: none;
 }
 
-/* button-section */
-/* .nav-button{
-    width: 15%;
-} */
-.nav-button button{
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 10px;
-    border: none;
-    color: rgb(2, 2, 69);
-    
-    
-}
-
-.signin-button{
-    margin-left: 2%;
-    padding: 8px 15px;
-}
-
+/* Button section  */
 .login-button{
-    padding: 8px 20px;
+   
+
+    
+        border: 1px solid #3498db;
+        background: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+        
+color: #48dbfb;
+
 
 }
+
+.login-button:hover{
+    background-color: #48dbfb;
+    color: black;
+}
+
+
 
 .nav-menubar ul li a:hover{
     background-color: rgb(130, 202, 202);
@@ -114,11 +123,7 @@ body{
     transition: all ease 1s linear;
 }
 
-.nav-button button:hover{
-    /* font-size: 1.25rem; */
-    background-color:rgb(101, 23, 4) ;
-    color: #fff;
-}
+
 
 /* hidden menu section */
 
@@ -148,17 +153,12 @@ body{
    
 
 
-
-
 .nav{
     height: fit-content;
     width: 100%;
     
     display: block;
     text-align: center;
-    
-    
-   
     
     background-color: rgb(2, 2, 68);
 
@@ -266,7 +266,7 @@ body{
 .navx .nav-menubar ul li a{
     text-decoration: none;
     font-size: 1.3rem;
-    color: #fff;
+    color: #48dbfb;
     font-weight: 500;
     padding: 6vh 10px;
 }
@@ -282,12 +282,19 @@ body{
     padding: 10px 0px;
 }
 .navx .nav-button button{
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 20px;
-    border: none;
-    color: rgb(2, 2, 69);
     
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    
+color: #48dbfb;
     
 }
 
