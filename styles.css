@@ -68,17 +68,19 @@ body{
 }
 .nav-menubar ul li{
     list-style: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
 }
 
 .nav-menubar ul li a{
     text-decoration: none;
     font-size: 1.2rem;
-    /* color: #fff; */
+    
     font-weight: 300;
-    padding: 6vh 10px;
+    
+    padding: 0 0 5px 0;
     font-family: 'Roboto', sans-serif;
     color: #48dbfb;
+    position: relative;
 }
 
 .submenu{
@@ -111,16 +113,23 @@ color: #48dbfb;
     color: black;
 }
 
+.nav-menubar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: darkorange;
+    transition: all ease 1s;
+
+}
+
+.nav-menubar ul li a:hover::after{
+ 
+    width: 100%;
 
 
-.nav-menubar ul li a:hover{
-    background-color: rgb(130, 202, 202);
-    padding: 5.6vh 10px  5.9vh 10px;
-    color: rgb(54, 31, 3);
-    border-top: 3px solid orangered ;
-    text-underline-offset: 5px;
-    text-decoration: underline orangered;
-    transition: all ease 1s linear;
 }
 
 
@@ -260,7 +269,7 @@ color: #48dbfb;
 }
 .navx .nav-menubar ul li{
     list-style: none;
-    padding: 10px 20px;
+    /* padding: 10px 30px; */
 }
 
 .navx .nav-menubar ul li a{
@@ -268,8 +277,21 @@ color: #48dbfb;
     font-size: 1.3rem;
     color: #48dbfb;
     font-weight: 500;
-    padding: 6vh 10px;
+    
+    padding: 0 0 5px 0;
 }
+.navx .nav-menubar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: darkorange;
+    transition: all ease 1s;
+
+}
+.navx .nav-menubar ul li a:hover::after{width: 100%;}
 
 .nav .submenu{
     display: none;
@@ -308,11 +330,8 @@ color: #48dbfb;
 
 }
 
-.navx .nav-menubar ul li:hover{
-    /* background-color: rgb(7, 77, 77);
-    padding: 10px 10px ;
-    color: darkorange;
-    border: 1px solid #fff; */
+/* .navx .nav-menubar ul li:hover{
+   
 
     background-color: rgb(130, 202, 202);
     padding: 3px;
@@ -324,7 +343,7 @@ color: #48dbfb;
 .navx .nav-menubar ul li a:hover{
     color: rgb(54, 31, 3);
     padding: 3px;
-}
+} */
 
 .navx .nav-button button:hover{
     
@@ -342,13 +361,20 @@ color: #48dbfb;
 
 @media screen and (max-width: 1200px){
     .nav-menubar ul li a:hover{
-        background-color: rgb(130, 202, 202);
-        padding: 10px;
-        color: rgb(54, 31, 3);
-        border-top: 3px solid orangered ;
-        text-underline-offset: 5px;
-        text-decoration: underline orangered;
-        transition: all ease 1s linear;
+        .navx .nav-menubar ul li a::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            background-color: darkorange;
+            transition: all ease 1s;
+            
+        
+        }
+        .navx .nav-menubar ul li a:hover::after{width: 100%;}
+        
     }
 }
 
