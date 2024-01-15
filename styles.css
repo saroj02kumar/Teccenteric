@@ -24,10 +24,10 @@ body{
 
 }
 
-@keyframes nav-color-change {
+/* @keyframes nav-color-change {
     
     
-}
+} */
 
 /* Company Titel */
 
@@ -197,7 +197,7 @@ color: #48dbfb;
 .nav h1 span{
     font-size: 0.8rem;
 
-    margin-left: 4%;
+    /* margin-left: 3%; */
 }
 
 /* Menubar-section */
@@ -258,7 +258,7 @@ color: #48dbfb;
 .nav h1 span{
     font-size: 0.8rem;
 
-    margin-left: 4%;
+    /* margin-left: 4%; */
 }
 
 /* Menubar-section */
